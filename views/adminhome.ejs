@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-notes</title>
+    <link rel="icon" type="image/png" href="./img/icons8-notes-50.png">
+    
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="css/responsiveadmin.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <link rel="stylesheet" href="css/resposive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<style>
+  .header2{
+    color: black;
+    font-size: 70px;
+  font-family: "Times New Roman", Serif;
+  }
+  .showcase-area {
+    height: 50vh;
+    background: linear-gradient(
+        rgba(240, 240, 240, 0.144),
+        rgba(255, 255, 255, 0.336)
+      );
+    background-image: url("./img/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 250px 0 200px;
+    position: relative;
+  }
+</style>
+</head>
+<body>
+    <!------nav bar-->
+    <header class="header">
+        <div class="container mt-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top header-nav bg-custom navbar-custom">
+            <a class="navbar-brand" href="./home.html"><i class="fa fa-book" aria-hidden="true"></i>E -Notes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span></span>
+             <span></span>
+             <span></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./adminhome"><i class="fa fa-home" aria-hidden="true"></i> Admin Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./admin"><i class="fa fa-info-circle text-dark" aria-hidden="true"></i> About Admin<span class="sr-only">(current)</span></a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./viewstudents.ejs"><i class="fa fa-street-view text-dark" aria-hidden="true"></i>Views Students</a>
+                </li> 
+                <li class="nav-item ">
+                    <a class="nav-link" href="./viewteachers.ejs"><i class="fa fa-street-view text-dark" aria-hidden="true"></i>Views Teachers</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="./adminviewnotes"><i class="fa fa-unlock text-dark" aria-hidden="true"></i>Views Notes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="logout">
+                      <i class="fa fa-sign-out text-dark" aria-hidden="true"></i> LogOut </a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+
+            <h1>Welcome <i class="fa fa-user-secret" aria-hidden="true"></i> <%= data %></h1>
+            
+           
+        
+            <p> 
+            </p>
+        
+        </div>
+    </section>
+
+    <div class="container-fluid pb-2 pt-3">
+        <div class="card bg-light pt-4 py-3">
+            <div class="card-body text-center"> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-secondary mt-1 ">
+      <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+          <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+              <h5 class="text-uppercase text-white">Welcome</h5>
+              <p class="text-white">
+                Note: Any Problem Regarding Content Contact Sagar Team
+              </p>
+              <p class="text-white">Node Js Programmner</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3" />
+  
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Links -->
+              <h5 class="text-uppercase text-white">Facebook</h5>
+  
+              <a class="text-white mr-2" href="https://www.facebook.com/profile.php?id=100071574906839&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Sagar
+                CHaudhary</a>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+              <h5 class="text-uppercase text-white">Instagram</h5>
+              <a class="text-white mr-2" href="https://www.instagram.com/sagarchaudhary330/"><i class="fa-brands fa-instagram"></i> Sagar
+                CHaudhary</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center py-3 text-white">
+          © 2023 Copyright:
+          <a href="www.google.com"> Google</a>
+        </div>
+      </footer>
+    </div>
+<!-- Jquery and js file  -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>

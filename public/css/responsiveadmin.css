@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html,body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+}
+.header1{
+  color:black;
+  font-size: 70px;
+font-family: "Times New Roman", Serif;
+}
+a{
+  text-decoration: none;
+  color:#1d1c1c;
+  font-weight: 500;
+  font-size: large;
+  transition: color 0.3s ease-in-out;
+}
+a:hover{
+  color: #b84848;
+}
+ul {
+   list-style-type: none;
+}
+.header{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+
+}
+
+/* ............/navbar/............ */
+
+/* desktop mode............/// */
+.navbar{
+    background: rgb(134, 133, 133);
+    padding: 20px;
+    padding-left: 50px;
+    height: 2rem;
+    min-height: 10vh;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    opacity: 0.85;
+    height: 50px;
+    z-index: 12;
+  }
+  .navbar-light .navbar-nav .nav-item .nav-link:active{
+    background: #b4b3b3;
+    border-radius: 20px;
+    color: #d8d5d5;
+  }
+  .navbar-light .navbar-nav .nav-item .nav-link:hover{
+    background: #8f8d8d;
+    color: #fffefe;
+  }
+  .navbar .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+  }
+   .navbar-light .navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #0a2366;
+   }
+   .navbar-brand:hover {
+    background: rgb(91, 163, 192);
+    border-radius: 10px;
+  }
+  .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .navbar-brand:focus{
+    color: #0a2366;
+  }
+   .navbar-toggler{
+    background: rgb(243, 242, 238);
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+   }
+  .navbar-toggler span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: rgb(160, 158, 158);
+  }
+  .navbar-toggler span + span{
+    margin-top: 3px;
+    width: 18px;
+    margin-left: 4px;
+  
+  }
+  .navbar-toggler span + span + span{
+    width: 10px;
+    margin-left: 10px; 
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    position: relative;
+    border-radius: 20px;
+  
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:hover{
+   border-top: 4px solid rgb(192, 192, 189);
+   color: rgb(119, 119, 121); 
+  }
+  .navbar-expand-lg .navbar-nav .nav-link.active{
+    border-top: 4px solid rgb(158, 157, 155); 
+    color: #fdfdfd;
+   }
+   .navbar .nav-item .nav-link{
+    color: rgb(172, 120, 62);
+  }
+   .nav-item:hover .nav-link{
+    background: rgb(155, 152, 152);
+    color:white;
+    border-radius: 20px;
+  }
+  
+  .navbar-brand i{
+    padding-right: 0px;
+  }
+  .hh{
+    padding:7px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline:#4dc1e7;
+    margin:auto;
+    margin: 6px;
+    font-weight: small;
+    background: #80c2e9;
+    border: #000;
+  }
+  .hh:hover{
+    background: #999b9a;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: small;
+    
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background: #16a083;
+  }
+  
+  .btn-primary:hover {
+    background: #117964;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .image-logo{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: #000;
+  }
+
+  .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+  }
+  
+  .main-title {
+    text-transform: uppercase;
+    margin-top: 1.5em;
+  }
+  @media (max-width: 768px) {
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.75rem;
+      line-height: 0;
+      white-space: nowrap;
+  }
+  .navbar-toggler {
+    background: rgb(243, 242, 238);
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+    line-height: 0;
+  }
+  .navbar-light .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #0a2366;
+    padding-top: 16px;
+  }
+  .navbar-brand i{
+    padding-right: 6px;
+  }
+  .navbar-nav{
+    background-color: #bdbaba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  }
+  @media (min-width:300px) and (max-width: 687px) {
+    html {
+      font-size: 75%;
+    }
+    .navbar-light .navbar-brand{
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        color: #0a2366;
+       }
+    .navbar-light .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        color: #0a2366;
+        padding-top: 16px;
+      }
+      .navbar-brand i{
+        padding-right: 6px;
+      }
+  
+    .navbar-nav{
+      background-color: #bdbaba;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.5s ease-in-out;
+      border-radius: 5px;
+      padding: 2px;
+    }
+    .navbar-light .navbar-brand {
+        color: #0a2366;
+    }
+    .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 3rem;
+        color: #c58918;
+    }
+    .text-primary {
+        color: #007bff!important;
+    }
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: 0;
+        white-space: nowrap;
+    }
+    
+  }
+  @media (min-width:769px) and (max-width:840px) {
+    .navbar {
+      opacity: 0.95;
+    }
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.75rem;
+      line-height: 0;
+      white-space: nowrap;
+  }
+  .navbar-toggler {
+    background: rgb(243, 242, 238);
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+    line-height: 0;
+  }
+  .navbar-nav{
+    background-color: #bdbaba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  .navbar-light .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #0a2366;
+    padding-top: -17px;
+  }
+  .navbar-brand i{
+    padding-right: 6px;
+  }
+    
+  }
+  
+  @media (min-width: 841px) and (max-width: 990px) {
+    .navbar {
+      opacity: 0.95;
+    }
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.75rem;
+      line-height: 0;
+      white-space: nowrap;
+  }
+  .navbar-toggler {
+    background: rgb(243, 242, 238);
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+    line-height: 0;
+  }
+  .navbar-nav{
+    background-color: #bdbaba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 2px;
+  }
+   
+  .navbar-light .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #0a2366;
+    padding-top: 16px;
+  }
+  .navbar-brand i{
+    padding-right: 6px;
+  }
+  }
+  
+  @media (min-width: 990px) and (max-width: 1200px) {
+    .navbar-light .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        color: #0a2366;
+        padding-top: 16px;
+      }
+      .navbar-brand i{
+        padding-right: 6px;
+      }
+  }
+  @media (orientation: landscape) and (max-height: 500px) {
+    .showcase-area {
+      height: 50vmax;
+    }
+  }

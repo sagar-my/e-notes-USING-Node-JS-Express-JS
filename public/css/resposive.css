@@ -1,0 +1,188 @@
+@media (max-width: 768px) {
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.75rem;
+      line-height: 0;
+      white-space: nowrap;
+  }
+  .navbar-toggler {
+    background: rgb(243, 242, 238);
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+    line-height: 0;
+  }
+  .navbar-light .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #0a2366;
+    padding-top: 16px;
+  }
+  .navbar-brand i{
+    padding-right: 6px;
+  }
+  .navbar-nav{
+    background-color: #bdbaba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  }
+  @media (min-width:300px) and (max-width: 687px) {
+    html {
+      font-size: 75%;
+    }
+    .navbar-light .navbar-brand{
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        color: #0a2366;
+       }
+    .navbar-light .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        color: #0a2366;
+        padding-top: 16px;
+      }
+      .navbar-brand i{
+        padding-right: 6px;
+      }
+  
+    .navbar-nav{
+      background-color: #bdbaba;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.5s ease-in-out;
+      border-radius: 5px;
+      padding: 2px;
+    }
+    .navbar-light .navbar-brand {
+        color: #0a2366;
+    }
+    .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 3rem;
+        color: #c58918;
+    }
+    .text-primary {
+        color: #007bff!important;
+    }
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: 0;
+        white-space: nowrap;
+    }
+    
+  }
+  @media (min-width:769px) and (max-width:840px) {
+    .navbar {
+      opacity: 0.95;
+    }
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.75rem;
+      line-height: 0;
+      white-space: nowrap;
+  }
+  .navbar-toggler {
+    background: rgb(243, 242, 238);
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+    line-height: 0;
+  }
+  .navbar-nav{
+    background-color: #bdbaba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  .navbar-light .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #0a2366;
+    padding-top: -17px;
+  }
+  .navbar-brand i{
+    padding-right: 6px;
+  }
+    
+  }
+  
+  @media (min-width: 841px) and (max-width: 990px) {
+    .navbar {
+      opacity: 0.95;
+    }
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.75rem;
+      line-height: 0;
+      white-space: nowrap;
+  }
+  .navbar-toggler {
+    background: rgb(243, 242, 238);
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+    line-height: 0;
+  }
+  .navbar-nav{
+    background-color: #bdbaba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 2px;
+  }
+   
+  .navbar-light .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #0a2366;
+    padding-top: 16px;
+  }
+  .navbar-brand i{
+    padding-right: 6px;
+  }
+  }
+  
+  @media (min-width: 990px) and (max-width: 1200px) {
+    .navbar-light .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        color: #0a2366;
+        padding-top: 16px;
+      }
+      .navbar-brand i{
+        padding-right: 6px;
+      }
+  }
+  @media (orientation: landscape) and (max-height: 500px) {
+    .showcase-area {
+      height: 50vmax;
+    }
+  }

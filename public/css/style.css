@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.button {
+  border-radius: 4px;
+  border: none;
+  background-color: #80c2e9;
+  color: #1d1c1c;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  margin: 2px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.html,body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  background-color: #a79a9a;
+}
+.header1{
+  color:black;
+  font-size: 70px;
+font-family: "Times New Roman", Serif;
+}
+a{
+  text-decoration: none;
+  color:#1d1c1c;
+  font-weight: 500;
+  font-size: large;
+  transition: color 0.3s ease-in-out;
+}
+a:hover{
+  border-radius: 10px;
+  color: #968f8f;
+}
+ul {
+   list-style-type: none;
+}
+.header{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+
+}
+/* ............/navbar/............ */
+
+
+
+
+/* desktop mode............/// */
+.navbar{
+  background: rgb(134, 133, 133);
+  padding: 20px;
+  padding-left: 50px;
+  height: 2rem;
+  min-height: 10vh;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+/* .navbar-light .navbar-nav .nav-item.active{
+  background: #b4b3b3;
+  border-radius: 20px;
+  color: #864242;
+} */
+.navbar-light .navbar-nav .nav-item .nav-link:active{
+  background: #b4b3b3;
+  border-radius: 20px;
+  color: #d8d5d5;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover{
+  background: #8f8d8d;
+  color: #fffefe;
+}
+.navbar .navbar-brand a{
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+}
+ .navbar-light .navbar-brand{
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #0a2366;
+ }
+ .navbar-brand:hover {
+  background: rgb(91, 163, 192);
+  border-radius: 10px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.navbar-brand:focus{
+  color: #0a2366;
+}
+ .navbar-toggler{
+  background: rgb(243, 242, 238);
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+ }
+.navbar-toggler span{
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 1px;
+  background: rgb(160, 158, 158);
+}
+.navbar-toggler span + span{
+  margin-top: 3px;
+  width: 18px;
+  margin-left: 4px;
+
+}
+.navbar-toggler span + span + span{
+  width: 10px;
+  margin-left: 10px; 
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding: 10px 10px;
+  font-size: 1.4rem;
+  position: relative;
+  border-radius: 10px;
+
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+ border-top: 4px solid rgb(192, 192, 189);
+ color: rgb(119, 119, 121); 
+}
+.navbar-expand-lg .navbar-nav .nav-link.active{
+  border-top: 4px solid rgb(158, 157, 155); 
+  color: #fdfdfd;
+ }
+ .navbar .nav-item .nav-link{
+  color: rgb(116, 93, 67);
+}
+ .nav-item:hover .nav-link{
+  background: rgb(155, 152, 152);
+  color:white;
+  border-radius: 20px;
+}
+
+.navbar-brand i{
+  padding-right: 6px;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+/* .div-color{
+  background-image: linear-gradient(to right top, #d61cd8, #7179ff, #00a1ff, #00b9f4, #43c7d2);
+  height:500px;
+}
+
+.dark-theme {
+       color: rgb(104, 101, 101);
+       background-color: rgb(26, 20, 20);
+    }
+    button {
+       width: 13rem;
+       height: 3rem;
+       font-size: 1.5rem;
+       border: none;
+       border-radius: 12px;
+    } */
+/* ///////////..utility classes../////////// */
+/* Form login  */
+
+
+.hh{
+  padding:7px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline:#4dc1e7;
+  margin:auto;
+  margin: 6px;
+  font-weight: small;
+  background: #80c2e9;
+  border: #000;
+}
+.hh:hover{
+  background: #999b9a;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+  
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+.home-img{
+  width: 300px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: #000;
+}
+.image-logo{
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: #000;
+}
+
+
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    );
+  background-image: url("./img/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 250px 0 200px;
+  position: relative;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+
+
+
+
+      /* ......//about us//...... */
+
+#about {
+  padding: 50px 0;
+  background: #f5f5f7;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 2.3rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#about .small {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 10px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+  box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+/* ......../ media query /.......... */
+

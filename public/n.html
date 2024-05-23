@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+    .sidebar {
+      height: 100%;
+      width: 160px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 16px;
+    }
+
+    .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .main {
+      margin-left: 160px;
+      /* Same as the width of the sidenav */
+      padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidebar {
+        padding-top: 15px;
+      }
+
+      .sidebar a {
+        font-size: 18px;
+      }
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top header-nav bg-custom navbar-custom">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul>
+        <li class="nav-item active">
+          <a class="nav-link" href="./home.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">
+            <i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<i class="fa fa-book" aria-hidden="true"></i> E-Notes</span>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+      <ul class="nav navbar-nav navbar-right">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="./reg.html"><i class="fa fa-registered" aria-hidden="true"></i> Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#loginadmin"><i class="fa fa-unlock" aria-hidden="true"></i> Admin Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="showcase-area" id="showcase">
+    <div class="showcase-container">
+      <div class="row align-items-center">
+        <marquee width="410%" direction="left" height="100px">
+          <h1 class="header2">Welcome to E-Notes</h1>
+        </marquee>
+        <div class="col-md-12 text-center">
+
+          <div class="back">
+            <h3><b><i>Your classy destination for note-taking.</i></b></h3><br>
+            <button type="button" href="./login.html"class="button"><span><u>Get Started</u></span> </button>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <div class="modal fade" id="loginadmin" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-primary" id="loginModalLabel"> <i class="fa-solid fa-chalkboard-user"></i>Admin Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="adminlogin">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form2Example1" name="e1" class="form-control" />
+              <label class="form-label" for="form2Example1">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="form2Example2" name="p1" class="form-control" />
+              <label class="form-label" for="form2Example2">Password</label>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                  <label class="form-check-label" for="form2Example31"> Remember me </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="hh" data-dismiss="modal">
+                Close
+              </button>
+              <button type="submit" class="hh"> Admin Login</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid pb-2 pt-3">
+    <div class="card bg-light pt-4 py-3">
+      <div class="card-body text-center">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-secondary mt-1">
+    <footer class="page-footer font-small blue pt-4">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase text-white">Welcome</h5>
+            <p class="text-white">
+              Note: Any Problem Regarding Content Contact Sagar Team
+            </p>
+            <p class="text-white">Node Js Programmner</p>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase text-white">Facebook</h5>
+
+            <a class="text-white mr-2" href="https://www.facebook.com/profile.php?id=100071574906839&mibextid=ZbWKwL"><i class="fa fa-facebook-square" aria-hidden="true"></i> Sagar
+              CHaudhary</a>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase text-white">Instagram</h5>
+            <a class="text-white mr-2" href="https://www.instagram.com/sagarchaudhary330/"><i class="fa fa-instagram" aria-hidden="true"></i> Sagar
+              CHaudhary</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3 text-white">
+        © 2023 Copyright:
+        <a href="www.google.com"> Google</a>
+      </div>
+    </footer>
+  </div>
+  <!-- Jquery and js file  -->
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+</body>
+
+</html>

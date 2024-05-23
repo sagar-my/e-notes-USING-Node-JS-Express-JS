@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-notes</title>
+  <link rel="icon" type="image/png" href="./img/icons8-notes-50.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/resposive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <style>
+    .header2 {
+      color: black;
+      font-size: 70px;
+      font-family: "Times New Roman", Serif;
+    }
+  
+.header-title h1{
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    -webkit-animation: bounce-in-top 1.1s both;
+            animation: bounce-in-top 1.1s both;
+}
+
+    .showcase-area {
+      height: 50vh;
+      background: linear-gradient(rgba(240, 240, 240, 0.144),
+          rgba(255, 255, 255, 0.336));
+      background-image: url("./img/back.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 250px 0 200px;
+      position: relative;
+      border-radius: 10px;
+    }
+    @-webkit-keyframes bounce-in-top{
+    0%{
+        -webkit-transform: translateY(-500px);
+                transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55%{
+        -webkit-transform: translateY(-65px);
+                transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+    }
+    72%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+    81%{
+        -webkit-transform: translateY(-28px);
+                transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+    }
+    90%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+    95%{
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-top{
+    0%{
+        -webkit-transform: translateY(-500px);
+                transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55%{
+        -webkit-transform: translateY(-65px);
+                transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+    }
+    72%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+    81%{
+        -webkit-transform: translateY(-28px);
+                transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+    }
+    90%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+    95%{
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+}
+  </style>
+</head>
+
+<body>
+  <!------nav bar-->
+  <header class="header">
+    <div class="container mt-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top header-nav bg-custom navbar-custom">
+        <a class="navbar-brand" href="./home.html"><i class="fa fa-book" aria-hidden="true"></i>E -Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="./home.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./about.html"><i class="fa fa-info-circle text-dark" aria-hidden="true"></i> About Us<span class="sr-only">(current)</span></a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html"><i class="fa fa-sign-in text-dark" aria-hidden="true"></i> Login</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./reg.html"><i class="fa fa-registered text-dark" aria-hidden="true"></i> Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#loginadmin"><i class="fa fa-unlock text-dark" aria-hidden="true"></i> Admin Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact">
+                <i class="fa fa-phone text-dark" aria-hidden="true"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="showcase-area" id="showcase">
+    <div class="showcase-container">
+      <% if (message.error) { %>
+        <div class="alert alert-danger" id="k">
+          <%= message.error %></div>
+      <% } %>
+      <% if (message.mess) { %>
+        <div class="alert alert-danger" id="k">
+          <%= message.mess %></div>
+      <% } %>
+        <% if (message.msg) { %>
+            <div class="alert alert-danger" id="k">
+              <%= message.msg %></div>
+          <% } %>
+      <div class="row align-items-center">
+      
+        <div class="col-md-12 text-center">
+          <h1 class="header-title"> Welcome to E- Notes</h1>
+            <div class="back">
+            <h3><b><i>Your classy destination for note-taking.</i></b></h3><br>
+            <a type="button" href="./login.html" class="button"><span><u>Get Started</u></span> </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+  </section>
+  <div class="modal fade" id="loginadmin" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-primary" id="loginModalLabel"> <i class="fa-solid fa-chalkboard-user"></i>Admin Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="adminlogin">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form2Example1" name="e1" class="form-control" />
+              <label class="form-label" for="form2Example1">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="form2Example2" name="p1" class="form-control" />
+              <label class="form-label" for="form2Example2">Password</label>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                  <label class="form-check-label" for="form2Example31"> Remember me </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="hh" data-dismiss="modal">
+                Close
+              </button>
+              <button type="submit" class="hh"> Admin Login</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container-fluid pb-2 pt-2">
+    <div class="card bg-light pt-4 ">
+      <div class="card-body text-center">
+        
+  <br><br>
+  <h2 class="text-center"><b>We've summarized and analyzed<br> every book on your syllabus.</b></h2><br>
+  <p class="text-center">From <i>Macbeth</i> and <i>The Great Gatsby</i> to obscure works for your higher level courses,
+    our in-<br>depth guides are fact-checked by our team of experts to help you understand
+    every story,<br> chapter, theme, and character.</p>
+
+  <br><br><br>
+  <div class="container-fluid text-center" id="myDiv">
+    <h3>Supplementary Books</h3>
+    <br>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./img/rs.jfif" width="230" height="320">
+          <p><strong>R.S AGGARWAL</strong></p>
+          <p>RS Aggarwal covers all the topics in the class 10 syllabus
+            , ensuring that students are well-prepared for the board exams. </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./img/schand.jfif" width="250" height="200">
+          <p><strong>S Chand</strong></p>
+          <p>It is a reference book and exceptionally good for self-study.To score good marks in 10th, first go through S. Chand Books</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./img/pradeep.jfif" width="270" height="300">
+          <p><strong>Pradeep</strong></p>
+          <p>It is a good book to understand the theory and concepts but for JEE Main
+            you need to work beyond Pradeep.It is best bet for Boards </p>
+        </div>
+      </div>
+    </div><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2><b>We’ve helped thousands of students with their essays and homework.</b></h2>
+          <p>(and we’re ready to help you too!)<br><br>
+
+            Having trouble understanding a book or struggling to <br>
+            start your essay? Ask us any question and get the help <br>
+            you need fast. Our Educators have answered more than <br>
+            350,000 questions from students just like you. </p>
+        </div>
+
+        <div class="col-sm"><br>
+          <img src="./img/b.jfif" class="img-circle home-img" width="310" height="300">
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-secondary mt-1">
+    <footer class="page-footer font-small blue pt-4">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase text-white">Welcome</h5>
+            <p class="text-white">
+              Note: Any Problem Regarding Content Contact Sagar Team
+            </p>
+            <p class="text-white">Node Js Programmner</p>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase text-white">Facebook</h5>
+
+            <a class="text-white mr-2" href="https://www.facebook.com/profile.php?id=100071574906839&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Sagar
+              CHaudhary</a>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase text-white">Instagram</h5>
+            <a class="text-white mr-2" href="https://www.instagram.com/sagarchaudhary330/"><i class="fa-brands fa-instagram"></i> Sagar
+              CHaudhary</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3 text-white">
+        © 2023 Copyright:
+        <a href="www.google.com"> Google</a>
+      </div>
+    </footer>
+  </div>
+  <!-- Jquery and js file  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+
+</html>

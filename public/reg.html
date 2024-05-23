@@ -1,0 +1,382 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-notes</title>
+    <link rel="icon" type="image/png" href="./img/icons8-notes-50.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <!-- Bootstrap CSS -->
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+     <!-- Font Awesome CSS -->
+     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+     <!-- Style CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/resposive.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container mt-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top header-nav bg-custom navbar-custom">
+          <a class="navbar-brand" href="./home.html"><i class="fa fa-book" aria-hidden="true"></i>E -Notes</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span></span>
+           <span></span>
+           <span></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="./home.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./about.html"><i class="fa fa-info-circle text-dark" aria-hidden="true"></i> About Us<span class="sr-only">(current)</span></a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html"><i class="fa fa-sign-in text-dark" aria-hidden="true"></i> Login</a>
+              </li> 
+              <li class="nav-item ">
+                  <a class="nav-link" href="./reg.html"><i class="fa fa-registered text-dark" aria-hidden="true"></i> Register</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#loginadmin"><i class="fa fa-unlock text-dark" aria-hidden="true"></i> Admin Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">
+                    <i class="fa fa-phone text-dark" aria-hidden="true"></i> Contact Us</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </header>
+    <div class="container-fluid pb-2 pt-4">
+      <div class="card bg-light pt-4 py-3 mt-5">
+        <div class="container justify-content-center d-flex">
+          <h1 class="text-success">Welcome to Register Page</h1>
+        </div>
+        <div class="card-body text-center">
+          <div class="row">
+            <div class="col">
+                <img alt="" src="./img/teacher-reg.jpg" class="img-fluid mx-auto image-logo" style="max-width: 300px;">
+                <h1>
+                    If You Are Teacher Click Teacher Register Button
+                </h1>
+              <button
+                type="button"
+                class="hh"
+                data-toggle="modal"
+                data-target="#registerTeacher">
+                Register Teacher
+              </button>
+            </div>
+
+            <div class="col">
+                <img alt="" src="./img/student-reg.jpg" class="img-fluid mx-auto image-logo" style="max-width: 300px;">
+                <h1>
+                    If You Are Student CLick  Student Register Button
+                </h1>
+              <button
+                type="button"
+                class="hh"
+                data-toggle="modal"
+                data-target="#registerStudent">
+                Register Student
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Teacher -->
+    <div
+      class="modal fade"
+      id="registerTeacher"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Register</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="regteacher">
+              <!-- Full Name Field -->
+              <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input
+                  type="text"
+                  name="n1"
+                  class="form-control"
+                  placeholder="Enter your full name"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="e1"
+                  class="form-control"
+                  placeholder="Enter your email address"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="p1"
+                  class="form-control"
+                  placeholder="Enter your password"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="password">Repassword</label>
+                <input
+                  type="password"
+                  id="pass2"
+                  class="form-control"
+                  placeholder="Enter your Repassword"
+                  required />
+              </div>
+               <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+              <label class="form-check-label" for="form2Example31"> Remember me </label>
+            </div>
+          </div>
+      
+         
+        </div>   
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="hh"
+                  data-dismiss="modal">
+                  Close
+                </button>
+                <button type="submit" class="hh">Register</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Student -->
+    <div
+      class="modal fade"
+      id="registerStudent"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Register</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="regstudent">
+              <!-- Full Name Field -->
+              <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control"
+                  placeholder="Enter your full name"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Enter your email address"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="pass"
+                  class="form-control"
+                  placeholder="Enter your password"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="password">Repassword</label>
+                <input type="password" id="pass2"
+                  class="form-control"
+                  placeholder="Enter your Repassword"
+                  required />
+              </div>
+               <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+              <label class="form-check-label" for="form2Example31"> Remember me </label>
+            </div>
+          </div>
+
+        </div>    
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="hh text-sexondary"
+                  data-dismiss="modal">
+                  Close
+                </button>
+                <button type="submit" class="hh">Register</button>
+              </div>
+            </form>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  <!--------Admin popup-->
+<div
+class="modal fade"
+id="loginadmin"
+tabindex="-1"
+role="dialog"
+aria-labelledby="loginModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5  class="modal-title text-primary" id="loginModalLabel"> <i class="fa-solid fa-chalkboard-user"></i>Admin Login</h5>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+     <form method="post" action="adminlogin">
+       <!-- Email input -->
+       <div class="form-outline mb-4">
+         <input type="email" id="form2Example1" name="e1" class="form-control" />
+         <label class="form-label" for="form2Example1">Email address</label>
+       </div>
+     
+       <!-- Password input -->
+       <div class="form-outline mb-4">
+         <input type="password" id="form2Example2" name="p1" class="form-control" />
+         <label class="form-label" for="form2Example2">Password</label>
+       </div>
+     
+       <!-- 2 column grid layout for inline styling -->
+       <div class="row mb-4">
+         <div class="col d-flex justify-content-center">
+           <!-- Checkbox -->
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+             <label class="form-check-label" for="form2Example31"> Remember me </label>
+           </div>
+         </div>
+     
+         <div class="col">
+           <!-- Simple link -->
+           <a href="#!">Forgot password?</a>
+         </div>
+       </div>  
+       <div class="modal-footer">
+         <button
+           type="button"
+           class="hh"
+           data-dismiss="modal">
+           Close
+         </button>
+         <button type="submit" class="hh"> Admin Login</button>
+       </div>  
+     </form>
+    </div>
+   
+  </div>
+</div>
+</div>
+<div class="container-fluid bg-secondary mt-1">
+  <footer class="page-footer font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase text-white">Welcome</h5>
+          <p class="text-white">
+            Note: Any Problem Regarding Content Contact Sagar Team
+          </p>
+          <p class="text-white">Node Js Programmner</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3" />
+
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase text-white">Facebook</h5>
+
+          <a class="text-white mr-2" href="https://www.facebook.com/profile.php?id=100071574906839&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Sagar
+            CHaudhary</a>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase text-white">Instagram</h5>
+          <a class="text-white mr-2" href="https://www.instagram.com/sagarchaudhary330/"><i class="fa-brands fa-instagram"></i> Sagar
+            CHaudhary</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3 text-white">
+      © 2023 Copyright:
+      <a href="www.google.com"> Google</a>
+    </div>
+  </footer>
+</div>
+    <!-- Jquery and js file  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
